@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>مجزوءة الإنسان: الرغبة والمجتمع</title>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Naskh+Arabic:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#0d1224;--bg2:#151b36;--ink:#ebe6d6;--mute:#a7a8bd;--lap:#7d98ff;--och:#e0ad4a;--ros:#d4677d;--line:#2a3258}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1224}}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){color-scheme:light;--bg:#f1ecdd;--bg2:#e6dfcb;--ink:#161a30;--mute:#555a78;--lap:#2d4bd1;--och:#9a6a10;--ros:#a3304a;--line:#c9c0a6}}
+:root[data-theme="dark"]{color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:auto}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Naskh Arabic",serif;font-size:1.08rem;line-height:2.05;overflow-x:hidden}
+h1,h2,h3,h4{font-family:Amiri,serif;line-height:1.35;margin:0}
+#bar{position:fixed;top:0;right:0;height:4px;width:100%;background:linear-gradient(270deg,var(--och),var(--lap));transform-origin:right;transform:scaleX(0);z-index:50}
+#glow{position:fixed;top:0;left:0;width:340px;height:340px;margin:-170px;border-radius:50%;background:radial-gradient(circle,var(--lap),transparent 65%);opacity:.13;pointer-events:none;z-index:0}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;display:flex;gap:.4rem;overflow-x:auto;padding:.7rem 1rem;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav a{flex:none;color:var(--mute);text-decoration:none;padding:.15rem .9rem;border-radius:99px;font-size:.95rem;line-height:1.9;transition:.3s}
+nav a.on{color:var(--bg);background:var(--och)}
+nav a:focus-visible,button:focus-visible{outline:2px solid var(--lap);outline-offset:2px}
+.hero{min-height:92vh;display:grid;place-items:center;text-align:center;padding:4rem 1.2rem;position:relative;overflow:hidden}
+.hero svg{position:absolute;inset:0;margin:auto;width:min(120vw,900px);opacity:.5}
+.hero svg circle{fill:none;stroke:var(--line);stroke-width:1.2}
+.hero h1{font-size:clamp(3rem,13vw,8rem);position:relative}
+.hero h1 span{display:inline-block;overflow:hidden;vertical-align:bottom;padding:0 .12em}
+.hero h1 b{display:inline-block;font-weight:700}
+.hero p{position:relative;max-width:34rem;margin:1.2rem auto 0;color:var(--mute);font-size:1.2rem}
+.hero .scroll{position:relative;margin-top:2.4rem;color:var(--och);font-family:Amiri}
+wrap,.wrap{display:block;max-width:56rem;margin:0 auto;padding:0 1.2rem;position:relative;z-index:1}
+section{padding:5rem 0 2rem}
+.kick{color:var(--och);font-family:Amiri;font-size:1.2rem}
+.big{font-size:clamp(2.4rem,9vw,5rem);margin:.2rem 0 1.4rem;overflow:hidden}
+.big span{display:inline-block}
+.sit{background:var(--bg2);border-right:4px solid var(--ros);padding:1.4rem 1.6rem;margin:1.5rem 0 2.4rem;border-radius:2px 14px 14px 2px}
+.sit h3{color:var(--ros);font-size:1.5rem}
+.ax{border-top:1px solid var(--line)}
+.ax:last-child{border-bottom:1px solid var(--line)}
+.ax>button{all:unset;box-sizing:border-box;cursor:pointer;display:flex;width:100%;align-items:center;justify-content:space-between;gap:1rem;padding:1.3rem .2rem;font-family:Amiri;font-size:1.55rem;line-height:1.5}
+.ax>button i{font-style:normal;color:var(--och);font-size:1.8rem;transition:transform .4s}
+.ax.open>button i{transform:rotate(45deg)}
+.bd{height:0;overflow:hidden}
+.bd>div{padding:0 .2rem 1.8rem}
+.q{color:var(--lap);font-family:Amiri;font-size:1.25rem;margin:0 0 .6rem}
+.bd ul{padding-inline-start:1.3rem;margin:.5rem 0 1.2rem}
+.bd li{margin-bottom:.5rem}
+.bd li::marker{color:var(--och)}
+.th{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:.8rem}
+.th div{border:1px solid var(--line);padding:.8rem 1rem;border-radius:10px;line-height:1.85;font-size:1rem;color:var(--mute)}
+.th strong{display:block;color:var(--ink);font-family:Amiri;font-size:1.2rem}
+.sum{margin-top:1.2rem;padding:1rem 1.2rem;border-radius:10px;background:color-mix(in srgb,var(--lap) 14%,transparent)}
+.more{margin:1.6rem 0 .4rem;color:var(--och);font-size:1.35rem}.bd p{margin:.4rem 0 .9rem}
+.gl{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1rem;margin-top:1.5rem}
+.gl div{padding:1.1rem 1.2rem;border-radius:14px;background:var(--bg2);border:1px solid var(--line);line-height:1.9;font-size:1rem}
+.gl h4{color:var(--och);font-size:1.4rem}
+.refs{columns:2 15rem;column-gap:2rem;padding-inline-start:1.3rem;margin-top:1.5rem}
+.refs li{margin-bottom:.5rem;break-inside:avoid}
+footer{padding:5rem 1.2rem 4rem;text-align:center;color:var(--mute);font-family:Amiri;font-size:1.3rem}
+@media (prefers-reduced-motion:reduce){#glow{display:none}}
+</style>
+</head>
+<body>
+<div id="bar"></div><div id="glow"></div>
+<nav id="nav" aria-label="التنقل"></nav>
+<header class="hero">
+<svg viewBox="0 0 800 800" aria-hidden="true"><circle cx="400" cy="400" r="380"/><circle cx="400" cy="400" r="290"/><circle cx="400" cy="400" r="200"/></svg>
+<div><h1 id="h1"></h1><p id="hp">رحلة معمّقة في مفهومَي الرغبة والمجتمع: وضعيات مشكلة، محاور، فلاسفة، وأسئلة تفتح باب التفكير.</p><div class="scroll">انزل لتبدأ</div></div>
+</header>
+<main id="main"></main>
+<footer>الفلسفة لا تمنحنا أجوبة جاهزة، بل تعلّمنا كيف نُحسن السؤال.</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+const D=[
+{id:"ideo",k:"تتمة المفهوم السابق",t:"الإيديولوجيا والوهم",
+sit:["المحور الثالث: الإيديولوجيا والوهم","نعتقد أحيانًا أن أفكارنا نابعة من عقل حر، ثم نكتشف أنها صدى لمصالح وعادات ورغبات خفية. كيف نميّز الحقيقة من الإيديولوجيا ومن الوهم؟"],
+axes:[{t:"الإيديولوجيا: وعي مقلوب أم رؤية للعالم؟",q:"هل الإيديولوجيا تشويه للواقع أم شرط للعيش الجماعي؟",
+pts:["الإيديولوجيا منظومة أفكار وقيم تبرّر نظامًا اجتماعيًا وتُظهر مصالح فئة على أنها مصلحة الجميع.","تتخفى في اللغة والمدرسة والإعلام فتبدو بديهية وطبيعية، وهنا خطرها.","يصعب كشفها من الداخل لأن حاملها يراها حقيقة لا رأيًا."],
+th:[["ماركس","الأفكار السائدة في عصر ما هي أفكار الطبقة المسيطرة، والوعي يقلب الواقع كما تقلب عدسة الصورة."],["ألتوسير","الأجهزة الإيديولوجية كالمدرسة والأسرة تصنع أفرادًا يخضعون طوعًا."],["غرامشي","الهيمنة تقوم على القبول الثقافي لا على القوة وحدها."]]},
+{t:"الوهم: حين تصنع الرغبة اعتقاداتنا",q:"ما الفرق بين الخطأ والوهم؟",
+pts:["الخطأ يُصحَّح بالدليل، أما الوهم فتسنده رغبة، ولذلك يقاوم البرهان.","الوهم ليس بالضرورة كاذبًا، لكنه يُصدَّق لأنه يرضينا لا لأنه يثبت.","العلم يتقدم بنقد أوهامه ومعارفه السابقة."],
+th:[["فرويد","الدين وهم لأنه يستمد قوته من رغبة الإنسان في الحماية."],["بيكون","الأوهام الأربعة: القبيلة والكهف والسوق والمسرح، وهي عوائق أمام معرفة موضوعية."],["باشلار","المعرفة العلمية تتقدم بالقطيعة مع الرأي والعوائق الإبستمولوجية."]],
+s:"الحقيقة جهد نقدي مستمر لتفكيك ما يبدو لنا بديهيًا."}]},
+{id:"desire",k:"المفهوم الأول",t:"مفهوم الرغبة",
+sit:["الوضعية المشكلة: لعبة الرغبة","نشتهي شيئًا بشدة، فإذا نلناه فترت الشهوة وطلبنا غيره. هل الرغبة نقص يؤلم أم قوة تدفعنا إلى الأمام؟ ولماذا لا يكتمل الإشباع أبدًا؟"],
+axes:[
+{t:"المحور الأول: الرغبة والحاجة",q:"هل الرغبة حاجة بيولوجية مهذّبة أم أمر مختلف جذريًا؟",
+pts:["الحاجة ضرورة عضوية محدودة بموضوع معيّن وتنتهي عند الإشباع، كالجوع والعطش.","الرغبة تتجاوز الضرورة: نريد طعامًا معيّنًا بطريقة معيّنة وأمام أعين معيّنة، فالرغبة مشبعة بالرموز والثقافة.","الاستهلاك المعاصر يصنع رغبات جديدة تُقدَّم كأنها حاجات.","لذلك يبدو الإنسان كائنًا لا يكتفي بما تمنحه الطبيعة."],
+th:[["أفلاطون","الرغبة نقص يدفع صاحبه نحو ما يفتقده، كما في أسطورة إيروس ابن الفقر."],["هيغل","الرغبة الإنسانية تطلب اعتراف الآخر لا امتلاك الشيء فقط."],["ماركس","الحاجات الإنسانية تاريخية، تتشكل بتطور المجتمع وأنماط الإنتاج."],["بودريار","في مجتمع الاستهلاك تصير الأشياء علامات للمكانة لا أدوات للنفع."]],
+s:"الحاجة تُشبَع والرغبة تتجدد، وهذا ما يمنح الإنسان بعدًا رمزيًا وتاريخيًا."},
+{t:"المحور الثاني: الرغبة والإرادة",q:"هل نحن عبيد رغباتنا أم نملك سلطة عليها؟",
+pts:["الرغبة ميل عفوي ينبع من الجسد والانفعال، أما الإرادة فقرار واعٍ يزن البدائل.","الإرادة قد تعارض الرغبة، كمن يمتنع عن لذة حاضرة طلبًا لخير أبعد.","لكن قد تكون الإرادة نفسها رغبة متنكرة، فيصير سؤال الحرية أعمق."],
+th:[["كانط","الإرادة الخيّرة هي التي تتبع الواجب الذي يقرّه العقل لا الميول الحسية."],["سبينوزا","الرغبة ماهية الإنسان، والحرية معرفة بأسباب رغباتنا لا غياب لها."],["شوبنهاور","الإرادة قوة عمياء تدفعنا دون غاية، والعقل خادم لها."],["أرسطو","الاختيار يقوم على التروي، فهو رغبة يوجّهها العقل."]],
+s:"الإرادة ليست نقيض الرغبة بل صورتها الواعية حين يُهذّبها التفكير."},
+{t:"المحور الثالث: الرغبة والسعادة",q:"هل تتحقق السعادة بإشباع الرغبات أم بالتحكم فيها؟",
+pts:["إشباع كل رغبة قد يوهم بالسعادة، لكنه يفتح رغبات أخرى بلا نهاية.","التحرر من الرغبة قد يمنح طمأنينة، لكنه قد يفقر الحياة من الحماسة.","السعادة قد تكون فنَّ تدبير الرغبات وترتيبها لا القضاء عليها."],
+th:[["كاليكليس وسقراط","الأول يدعو إلى إشباع بلا حدود، والثاني يشبّه ذلك بجرة مثقوبة لا تمتلئ."],["أبيقور","نميّز الرغبات الطبيعية الضرورية من غيرها، ونقتصر على ما يحفظ صفاء النفس."],["الرواقيون","السعادة في الانسجام مع الطبيعة والتحرر من الانفعالات."],["شوبنهاور","الحياة تتأرجح بين ألم الحرمان وملل الإشباع."]],
+s:"السعادة ليست حاصل الإشباع، بل نمط من التوازن بين الرغبة والعقل."}]},
+{id:"soc",k:"المفهوم الثاني",t:"مفهوم المجتمع",
+sit:["الوضعية المشكلة: هي وهو","حوار بين امرأة ورجل يكشف أن كثيرًا مما نظنه طبيعيًا هو في الحقيقة عادات وأدوار صنعها المجتمع. فهل المجتمع معطى طبيعي أم بناء؟ وإلى أي حد يصنعنا؟"],
+axes:[
+{t:"المحور الأول: أساس المجتمع",q:"لماذا يعيش البشر معًا: بالطبع أم بالاتفاق؟",
+pts:["القول الطبيعي: الإنسان لا يكتمل خارج الجماعة، فالحياة المشتركة امتداد لطبيعته.","القول التعاقدي: المجتمع ثمرة اتفاق بين أفراد سبقوا النظام الاجتماعي.","كلا التفسيرين يحدد ما نتوقعه من الدولة والقانون."],
+th:[["أرسطو","الإنسان كائن مدني بطبعه، والمدينة سابقة على الفرد في الغاية."],["ابن خلدون","الاجتماع ضروري لتحصيل الغذاء والدفاع، وتقوم الدولة على العصبية."],["هوبز","حالة الطبيعة حرب الجميع ضد الجميع، فنتنازل للسلطة طلبًا للأمن."],["روسو","العقد الاجتماعي يحوّل الحرية الطبيعية إلى حرية مدنية قوامها الإرادة العامة."]],
+s:"المجتمع حاجة وغاية معًا، وبين الطبع والعقد يتحدد معنى الشرعية."},
+{t:"المحور الثاني: الفرد والمجتمع",q:"هل الفرد صانع المجتمع أم نتاجه؟",
+pts:["الاتجاه الاجتماعي يرى أن اللغة والقيم والأدوار تسبقنا وتصوغ هويتنا.","الاتجاه الفردي يؤكد أن الفرد يستطيع أن ينقد ويغيّر ما ورثه.","العلاقة جدلية: نتشكل بالمجتمع ونعيد تشكيله."],
+th:[["دوركايم","الظواهر الاجتماعية خارجة عن الأفراد وملزمة لهم، والوعي الجمعي يسبقهم."],["ماركس","الماهية الإنسانية ليست جوهرًا فرديًا بل مجموع العلاقات الاجتماعية."],["سارتر","الوجود يسبق الماهية، فالإنسان مسؤول عن اختياره حتى داخل شروطه."],["ستيوارت ميل","للمجتمع سلطة على الفرد لا تتعدى منع الضرر عن الآخرين."]],
+s:"الفرد ابن مجتمعه، لكنه قادر على تجاوز ما صُنع منه."},
+{t:"المحور الثالث: سلطة المجتمع",q:"ما حدود قدرة المجتمع على توجيه الأفراد؟",
+pts:["السلطة لا تعمل بالقانون وحده بل بالعرف والمراقبة وتوقع نظرة الآخرين.","قد تتحول المعايير إلى عنف رمزي لا يُرى لأنه مقبول.","السلطة مشروعة حين تحمي الحرية، ومرفوضة حين تُلغيها."],
+th:[["فيبر","السلطة تحتاج إلى شرعية: تقليدية أو كاريزمية أو عقلانية قانونية."],["فوكو","السلطة شبكة علاقات تنتج المعرفة والانضباط عبر المراقبة."],["بورديو","العنف الرمزي يفرض المعايير كأنها طبيعية بموافقة ضحاياه."],["دو بوفوار","لا يولد المرء امرأة بل يصير كذلك، فالأدوار تُصنع اجتماعيًا."]],
+s:"السلطة الاجتماعية قدر مشترك، وسؤال الفلسفة هو متى تحمي الحرية ومتى تقيّدها."}]}];
+const G=[["الرغبة","نزوع واعٍ نحو موضوع غائب يُحسّ بنقصه، يتجاوز الحاجة إلى الرمزي."],["الحاجة","ضرورة عضوية أو نفسية يزول ألمها بالإشباع."],["الإرادة","قدرة على اتخاذ القرار والتصرف وفق غايات اختيرت بوعي."],["السعادة","حالة رضا مستقر تختلف الفلسفات في أسبابها وشروطها."],["الإيديولوجيا","منظومة تصورات تبرّر وضعًا اجتماعيًا وتخدم مصلحة فئة."],["الوهم","اعتقاد تغذّيه الرغبة أكثر مما يسنده الدليل."],["المجتمع","جماعة منظمة تربطها قواعد ولغة وقيم ومؤسسات."],["العقد الاجتماعي","اتفاق فرضي بين الأفراد يؤسس السلطة والقانون."],["الوعي الجمعي","مجموع المعتقدات والمشاعر المشتركة التي تلزم الأفراد."],["السلطة","قدرة على فرض الطاعة أو توجيه السلوك، بالقوة أو بالشرعية."],["الاغتراب","شعور الفرد بأن ما صنعه أو انتمى إليه صار غريبًا عنه."],["الهوية","ما يجعل الذات نفسها عبر الزمن، وتتشكل فرديًا واجتماعيًا."]];
+const R=["الجمهورية والمأدبة وغورجياس، أفلاطون","الأخلاق إلى نيقوماخوس، أرسطو","الأخلاق، سبينوزا","العالم إرادةً وتمثلًا، شوبنهاور","تأسيس ميتافيزيقا الأخلاق، كانط","لوفياثان، هوبز","في العقد الاجتماعي، روسو","المقدمة، ابن خلدون","قواعد المنهج في علم الاجتماع، دوركايم","الإيديولوجيا الألمانية، ماركس","مستقبل وهم، فرويد","المراقبة والمعاقبة، فوكو","الجنس الآخر، دو بوفوار","تكوين العقل العلمي، باشلار"];
+const X={
+"الإيديولوجيا: وعي مقلوب أم رؤية للعالم؟":["يستعمل ماركس صورة الغرفة المظلمة: كما تنقلب الصورة على شبكية العين، يرى الناس علاقاتهم الاجتماعية مقلوبة، فيظنون الأفكار هي التي تصنع الواقع وهي في الحقيقة نتاج ظروف مادية. ومن هنا تأتي وظيفتها: تحويل ما هو تاريخي وقابل للتغيير إلى ما يبدو أبديًا.","غير أن الإيديولوجيا لا تقتصر على التضليل. فعند غرامشي وريكور تؤدي وظيفة دمج الجماعة وتوفير رؤية مشتركة وذاكرة وهوية. والنقد الأهم: من يكشف الإيديولوجيا يتكلم هو أيضًا من موقع ما، فهل ينجو نقده من الإيديولوجيا؟ هذا الاعتراض يدفعنا إلى نقد ذاتي دائم بدل ادعاء الحياد الكامل."],
+"الوهم: حين تصنع الرغبة اعتقاداتنا":["يميّز فرويد بدقة بين الوهم والخطأ والهذيان: الخطأ مثل ظن أرسطو أن الديدان تتولد من الوحل، والهذيان يناقض الواقع صراحة، أما الوهم فمعتقد قد يصدق وقد يكذب، وما يحدد كونه وهمًا أن الرغبة هي دافعه الرئيس. لذلك لا يُعالج الوهم بالحجة وحدها بل بفهم الحاجة النفسية التي تغذيه.","وفي الإبستمولوجيا يقترح باشلار أن العلم يبدأ بنقد الرأي: التجربة الأولى والتعميم المتسرع والتجوهر كلها عقبات داخل الفكر نفسه. ويضيف بيكون أن العقل يشبه مرآة مقعّرة تشوّه الأشياء بطبيعته ما لم نصقله بالمنهج. فالحقيقة في هذا المحور موقف أخلاقي ومعرفي: شجاعة الشك في ما يرضينا."],
+"المحور الأول: الرغبة والحاجة":["يبيّن علم النفس التحليلي أن الرضيع حين يرضع يشبع حاجته الغذائية، لكنه يعيش أيضًا لذة لا تنتهي بالامتلاء: هنا تولد الرغبة، فهي تنفصل عن الحاجة لتتعلق بموضوع مفقود لا يكتمل. ومن هذا المعنى يقول لاكان إن الرغبة تقوم على الفجوة بين ما نطلب وما نريد حقًا.","ويضيف هيغل بُعدًا اجتماعيًا: إذا كانت رغبة الحيوان تلتهم موضوعها، فإن رغبة الإنسان تتجه إلى رغبة إنسان آخر، أي أن نكون موضع تقدير. ومن ثم يصير الصراع على الاعتراف محرك التاريخ. وعلى هذا يرد المعترض: ألا نُفرط في تعقيد الرغبة، وجزء كبير منها غريزي صرف؟ الجواب: حتى الغريزي يتشكل داخل الثقافة والذاكرة."],
+"المحور الثاني: الرغبة والإرادة":["يضع ديكارت في رسالة الانفعالات النفس في مواجهة جسدها: ليست الأهواء شرًا في ذاتها، لكن الحكمة أن نوجّهها بأحكام صائبة. وفي المقابل يرى سبينوزا أن الاعتقاد بالإرادة الحرة وهم ناتج عن جهلنا بالأسباب التي تحركنا، كحجر يظن لو كان واعيًا أنه يطير بمحض اختياره.","ويدفع نيتشه المسألة أبعد: إرادة القوة ليست قرارًا عقلانيًا بل نزوع حيوي للنمو والتغلب، والعقل أحد أدواتها. بين كانط الذي يجعل الإرادة سلطة العقل العملي، وسبينوزا ونيتشه اللذين يردّان الإرادة إلى قوى أعمق، تتحدد حدود الحرية الإنسانية: هل هي استقلال عن الرغبة أم فهم لها؟"],
+"المحور الثالث: الرغبة والسعادة":["يقسّم أبيقور الرغبات ثلاثة أنواع: طبيعية ضرورية كالأكل، وطبيعية غير ضرورية كالمأكولات الفاخرة، وغير طبيعية ولا ضرورية كالمجد والثروة المفرطة. السعادة عنده غياب الألم في الجسد (الأبونيا) والاضطراب في النفس (الأطراكسيا). وهذا تصور لا يرفض اللذة بل يهندسها.","وتختلف الرواقية في أن الخير الأسمى هو الفضيلة، فالحكيم يميّز بين ما يتوقف علينا وما لا يتوقف، ويرضى بالثاني. وتنقد الفلسفة المعاصرة هذا الاتجاه بأنه قد يبرر الاستسلام، فتعيد الاعتبار للرغبة بوصفها طاقة إبداع، كما عند نيتشه وسبينوزا. وعند كانط السعادة مثال للخيال لا للعقل، إذ لا نستطيع أن نحدد بدقة ما نريده حقًا."],
+"المحور الأول: أساس المجتمع":["يرى أرسطو أن الطبيعة لا تفعل شيئًا عبثًا، وقد منحت الإنسان اللغة، وهي ما يتيح الحوار حول العدل والظلم، فالمجتمع السياسي ضرورة تتفق مع طبيعته الناطقة. أما ابن خلدون فيفسر العمران بالحاجة: لا يستطيع الفرد وحده تحصيل قوته ولا دفع عدوان الحيوان والبشر، فالتعاون ضرورة، ثم تأتي العصبية والملك لضبط التنازع.","في المقابل يرى التعاقديون أن الطبيعة لا تكفي لتبرير السلطة. عند هوبز يخاف الناس الموت العنيف فيعقدون اتفاقًا، وعند لوك يحمي العقد حقوقًا طبيعية سابقة، وعند روسو تصير الإرادة العامة مصدر القانون. والنقد: العقد افتراض منهجي لا حدث تاريخي، ومع ذلك يجيب عن سؤال مهم: ما الذي يجعل الطاعة مشروعة؟"],
+"المحور الثاني: الفرد والمجتمع":["يقيم دوركايم علم الاجتماع على قاعدة اعتبار الوقائع الاجتماعية أشياء: لها خصائص الخارجية والقهر والعمومية. فاللغة التي نتكلمها والعملة التي نتعامل بها وُجدت قبلنا، وتفرض نفسها علينا. وفي دراسته للانتحار بيّن أن أكثر الأفعال فردية تتأثر بدرجة تماسك المجتمع.","ويعترض سارتر ومن بعده الفرديون بأن الإنسان لا يختزل فيما صُنع منه: المهم ما نفعله بما فُعل بنا. وتأتي علوم الاجتماع الحديثة بحل وسط عند بورديو في مفهوم الهابيتوس، أي استعدادات مكتسبة تنتج سلوكًا حرًا في ظاهره ومشروطًا في عمقه. بذلك نفهم الفرد كمفاعلة مستمرة مع بنيته."],
+"المحور الثالث: سلطة المجتمع":["يصف فوكو في «المراقبة والمعاقبة» تصميم بنتام للسجن الشامل: برج يرى كل الزنازين ولا يراه أحد، فيراقب السجين نفسه. ويعمّمه فوكو على المدرسة والمصنع والمستشفى: السلطة الحديثة لا تعتمد على الإكراه المباشر بل على تحويلنا إلى حرّاس على أنفسنا.","ويطرح لا بويسي سؤال العبودية الطوعية: لماذا يطيع الملايين فردًا واحدًا؟ لأن العادة تجعل الخضوع طبيعيًا، ولأن كل مستفيد من الاستبداد يصير حلقة فيه. وعند ستيوارت ميل حدود: لا شرعية لسلطة المجتمع على فرد إلا لمنع الأذى عن غيره. وبين هذه المواقف يبقى السؤال: كيف نبني سلطة تحترم الحرية؟"]};
+const Q={
+"الإيديولوجيا: وعي مقلوب أم رؤية للعالم؟":"هل تستطيع أن تذكر فكرة تعتبرها بديهية وهي في الأصل نتاج بيئتك؟",
+"الوهم: حين تصنع الرغبة اعتقاداتنا":"ما اعتقاد تتمنى صحته حتى صرت لا تسأل عن دليله؟",
+"المحور الأول: الرغبة والحاجة":"لماذا لا نشبع من وسائل التواصل رغم أنها لا تسد حاجة بيولوجية؟",
+"المحور الثاني: الرغبة والإرادة":"إذا كانت إرادتك نتاج أسباب تجهلها، فهل تكون مسؤولًا عن أفعالك؟",
+"المحور الثالث: الرغبة والسعادة":"هل تفضّل حياة قصيرة مليئة بالرغبات المتحققة أم طويلة هادئة بلا اشتهاء؟",
+"المحور الأول: أساس المجتمع":"لو أُتيح لك الخروج من المجتمع إلى حالة الطبيعة، فهل تعقد عقدًا جديدًا؟",
+"المحور الثاني: الفرد والمجتمع":"أي جزء من هويتك اخترته فعلًا، وأي جزء ورثته؟",
+"المحور الثالث: سلطة المجتمع":"متى تلتزم بقاعدة لا لأن القانون يفرضها بل لأن الناس يراقبون؟"};
+const M=document.getElementById("main"),N=document.getElementById("nav");
+let h="";const navs=[];
+D.forEach(c=>{navs.push([c.id,c.t]);
+h+=`<section id="${c.id}"><div class="wrap"><div class="kick">${c.k}</div><h2 class="big">${c.t.split(" ").map(w=>`<span>${w}</span>`).join(" ")}</h2>
+<div class="sit rv"><h3>${c.sit[0]}</h3><p>${c.sit[1]}</p></div>`+
+c.axes.map(a=>`<div class="ax rv"><button aria-expanded="false">${a.t}<i>+</i></button><div class="bd"><div><p class="q">${a.q}</p><ul>${a.pts.map(p=>`<li>${p}</li>`).join("")}</ul><div class="th">${a.th.map(x=>`<div><strong>${x[0]}</strong>${x[1]}</div>`).join("")}</div>${a.s?`<div class="sum">الخلاصة: ${a.s}</div>`:""}${X[a.t]?`<h4 class="more">تعمّق وتحليل</h4>${X[a.t].map(p=>`<p>${p}</p>`).join("")}<p class="q">للتأمل: ${Q[a.t]}</p>`:""}</div></div></div>`).join("")+`</div></section>`});
+navs.push(["mt","المقال"],["gl","المعجم"],["rf","المراجع"]);
+h+=`<section id="mt"><div class="wrap"><div class="kick">للامتحان</div><h2 class="big">بناء المقال الفلسفي</h2><div class="gl">${[["المقدمة","تحليل عبارات الموضوع، ثم الانتقال من المألوف إلى الإشكال، وصياغة سؤال محوري واضح."],["الأطروحة الأولى","عرض موقف يبدو بديهيًا مع حجج وأمثلة وفلاسفة، ثم نقده وبيان حدوده."],["الأطروحة المقابلة","موقف يعارض الأول بحجج مستقلة، لا مجرد نفي له، ثم مناقشته."],["التركيب","موقف يتجاوز التقابل ويحتفظ بما صمد من الأطروحتين."],["الخاتمة","حصيلة الجواب عن الإشكال وفتح أفق جديد دون تكرار."],["أخطاء شائعة","سرد الفلاسفة دون ربط بالسؤال، أو الحشو، أو إهمال النقد والانتقالات."]].map(g=>`<div class="rv"><h4>${g[0]}</h4>${g[1]}</div>`).join("")}</div></div></section>
+<section id="gl"><div class="wrap"><div class="kick">معجم مجزوءة الإنسان</div><h2 class="big">المصطلحات</h2><div class="gl">${G.map(g=>`<div class="rv"><h4>${g[0]}</h4>${g[1]}</div>`).join("")}</div></div></section>
+<section id="rf"><div class="wrap"><div class="kick">للتوسّع</div><h2 class="big">مراجع إضافية</h2><ul class="refs">${R.map(r=>`<li class="rv">${r}</li>`).join("")}</ul></div></section>`;
+M.innerHTML=h;
+N.innerHTML=navs.map(n=>`<a href="#${n[0]}" data-id="${n[0]}">${n[1].replace("مفهوم ","")}</a>`).join("");
+const H=document.getElementById("h1");
+H.innerHTML="فلسفة الإنسان".split(" ").map(w=>`<span><b>${w}</b></span>`).join(" ");
+const still=matchMedia("(prefers-reduced-motion:reduce)").matches;
+document.querySelectorAll(".ax").forEach(ax=>{const b=ax.querySelector("button"),bd=ax.querySelector(".bd");
+function open(o){ax.classList.toggle("open",o);b.setAttribute("aria-expanded",o);
+gsap.to(bd,{height:o?"auto":0,duration:still?0:.6,ease:"power3.inOut",onComplete:()=>window.ScrollTrigger&&ScrollTrigger.refresh()});
+if(o&&!still)gsap.fromTo(bd.querySelectorAll("li,.th div,.sum,.q"),{y:18,opacity:0},{y:0,opacity:1,stagger:.06,duration:.5,delay:.25,ease:"power2.out"})}
+b.onclick=()=>open(!ax.classList.contains("open"));
+if(ax===document.querySelector("#"+ax.closest("section").id+" .ax"))open(true)});
+if(window.gsap&&!still){gsap.registerPlugin(ScrollTrigger);
+const tl=gsap.timeline({defaults:{ease:"expo.out"}});
+tl.from("#h1 b",{yPercent:115,duration:1.5,stagger:.2}).from(".hero circle",{opacity:0,scale:.6,transformOrigin:"50% 50%",duration:2,stagger:.25},0).from("#hp",{y:20,opacity:0,duration:1},"-=.9").from(".scroll",{opacity:0,y:-10,duration:.8},"-=.5");
+gsap.to(".scroll",{y:10,repeat:-1,yoyo:true,duration:1,ease:"sine.inOut"});
+document.querySelectorAll(".hero circle").forEach((c,i)=>gsap.to(c,{rotation:(i%2?-1:1)*60,transformOrigin:"50% 50%",ease:"none",scrollTrigger:{trigger:".hero",start:"top top",end:"bottom top",scrub:1}}));
+gsap.to("#h1",{yPercent:-25,opacity:.2,scrollTrigger:{trigger:".hero",start:"top top",end:"bottom top",scrub:true}});
+gsap.to("#bar",{scaleX:1,ease:"none",scrollTrigger:{scrub:.3,start:0,end:"max"}});
+document.querySelectorAll(".big").forEach(t=>gsap.from(t.children,{yPercent:110,rotate:3,duration:1.1,stagger:.12,ease:"power4.out",scrollTrigger:{trigger:t,start:"top 85%"}}));
+gsap.utils.toArray(".kick").forEach(k=>gsap.from(k,{x:40,opacity:0,duration:.8,scrollTrigger:{trigger:k,start:"top 90%"}}));
+ScrollTrigger.batch(".rv",{start:"top 92%",onEnter:b=>gsap.from(b,{y:36,opacity:0,stagger:.1,duration:.8,ease:"power2.out",overwrite:true})});
+document.querySelectorAll(".sit").forEach(s=>gsap.from(s,{clipPath:"inset(0 0 0 100%)",duration:1.1,ease:"power3.inOut",scrollTrigger:{trigger:s,start:"top 85%"}}));
+document.querySelectorAll("section").forEach(s=>{const a=document.querySelector(`nav a[data-id="${s.id}"]`);
+ScrollTrigger.create({trigger:s,start:"top 45%",end:"bottom 45%",onToggle:t=>{if(t.isActive){document.querySelectorAll("nav a").forEach(x=>x.classList.remove("on"));a.classList.add("on");a.scrollIntoView({inline:"center",block:"nearest"})}}})});
+const gx=gsap.quickTo("#glow","x",{duration:.8}),gy=gsap.quickTo("#glow","y",{duration:.8});
+addEventListener("pointermove",e=>{gx(e.clientX);gy(e.clientY)});
+document.querySelectorAll(".th div,.gl div").forEach(c=>{c.addEventListener("pointerenter",()=>gsap.to(c,{y:-5,duration:.3}));c.addEventListener("pointerleave",()=>gsap.to(c,{y:0,duration:.4}))});
+}
+</script>
+</body>
+</html>
